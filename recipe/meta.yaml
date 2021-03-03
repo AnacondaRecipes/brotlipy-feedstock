@@ -4,6 +4,7 @@
 {% set cross = False %}
 {% if build_platform != target_platform and not build_platform.startswith('win') %}
 {% set cross = True %}
+{% endif %}
 
 package:
   name: {{ name|lower }}
